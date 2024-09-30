@@ -1,0 +1,15 @@
+# This is auto-generated - do not touch!
+name: Update Workflows
+
+on:
+  repository_dispatch:
+    types: [update-workflow]
+  workflow_dispatch:
+
+jobs:
+  upgrade:
+    uses: lundalogik/lime-workflows/.github/workflows/update-workflows.yml@v3
+    secrets: inherit
+    with:
+      os: ubuntu-latest
+      python_version: 3.11

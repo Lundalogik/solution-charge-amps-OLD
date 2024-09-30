@@ -1,0 +1,91 @@
+[build-system]
+requires      = ['poetry-core>=1.3']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.metadata]
+display_name  = 'charge-amps'
+package_name  = 'solution-charge-amps'
+lib_name      = 'solution_charge_amps'
+
+[tool.poetry]
+name        = 'solution-charge-amps'
+version     = '0.1.0'
+description = 'Lime CRM solution'
+authors     = ['Author <author@lime.tech>']
+
+[[tool.poetry.source]]
+name = 'lime'
+url  = 'https://pypi.lime.tech/simple/'
+
+[tool.poetry.plugins.lime_plugins]
+'solution-charge-amps' = 'solution_charge_amps'
+
+[tool.poetry.dependencies]
+python = '^3.11'
+lime-crm = '2.882.0'
+limepkg-ldc = '^1.4.3'
+lime-core-cloud = '^1.41.2'
+limepkg-status-flow = '^2.3.1'
+addon-infotiles = '^4.9.2'
+limepkg-erp-connector = '^9.2.0'
+limepkg-option-visualizer = '^2.0.0'
+lime-bi = '^3.34.0'
+limepkg-filter-editor = '^1.0.5'
+limepkg-kpi = '^1.2.3'
+limepkg-gdpr = '^3.0.1'
+limepkg-base-solution-helpers = '^5.1.2'
+limepkg-document-templates = '^1.25.8'
+limepkg-basic-deal = '^1.1.5'
+addon-lime-automation = '^2.3.0'
+limepkg-basic-lead = '^2.0.0'
+lime-newsletter = '^3.0.0'
+limepkg-smh-translations = '^1.1.0'
+limepkg-newsletter-pro = '^1.0.2'
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = '>=1'
+pytest = '>=6.2.3'
+flake8 = '^3.7'
+black = '^22.1.0'
+isort = '^5.0.0'
+mock = '>3'
+
+[tool.lime]
+[tool.lime.project]
+project_version = '1.238.1'
+project_type    = 'solution'
+project_target  = 'limecloud'
+
+
+[tool.pytest.ini_options]
+minversion = '6.0'
+norecursedirs = [
+    'venv',
+    '.venv',
+    'build',
+    'dist',
+    '.plugins',
+    'frontend',
+    '.env',
+    '.git',
+    '.github',
+    '.lime',
+    '.vscode'
+]
+faulthandler_timeout = 300
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | frontend
+  | poetry.lock
+)/
+'''
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
