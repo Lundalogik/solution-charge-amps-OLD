@@ -49,4 +49,3 @@ def test_expecteddate_when_setting_status_to_closed_status(
     deal = next(iter(save_lime_objects(deal)))
 
     assert deal.properties.expecteddate.value
-

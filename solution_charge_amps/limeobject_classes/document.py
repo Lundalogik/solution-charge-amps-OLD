@@ -54,4 +54,3 @@ def _create_document_history(document: Document, uow: UnitOfWork):
         attach_active_coworker=True,
         auto_relate=False,
     )
-

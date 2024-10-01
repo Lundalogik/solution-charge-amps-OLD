@@ -114,4 +114,3 @@ def test_trigger_automatedflow(
 
     except StopIteration:
         assert False, "The lead should have a automatedflowparticipant related"
-

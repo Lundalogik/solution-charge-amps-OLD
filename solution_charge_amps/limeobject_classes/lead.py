@@ -101,4 +101,3 @@ def _create_automated_flow_participant(
         uow.add(affected_object)
 
     return participant
-

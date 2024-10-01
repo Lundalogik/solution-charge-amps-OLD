@@ -101,4 +101,3 @@ def _get_created_from_lead(deal: LimeObject, uow: UnitOfWork) -> Optional[LimeOb
         ),
         None,
     )
-

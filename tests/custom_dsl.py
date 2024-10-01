@@ -940,4 +940,3 @@ automatedflowparticipant:
     bw_nextstep_time:
         type: time
 """
-

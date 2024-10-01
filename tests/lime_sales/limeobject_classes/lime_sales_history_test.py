@@ -97,4 +97,3 @@ def test_latestsalescontact_is_set_when_salescontact_history_is_attached(
         company.properties.latestsalescontact.value.astimezone(pytz.UTC).isoformat()
         == test_date.isoformat()
     )
-

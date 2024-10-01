@@ -104,4 +104,3 @@ def _set_latestsalescontact(
             _handle_sales_contact_on_object(prev_parent_object)
         except lime_errors.NotFoundError:
             pass  # Ignore if the previous object is not found
-
