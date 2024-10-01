@@ -40,7 +40,6 @@ addon-lime-automation = '^2.3.0'
 limepkg-basic-lead = '^2.0.0'
 lime-newsletter = '^3.0.0'
 limepkg-smh-translations = '^1.1.0'
-limepkg-newsletter-pro = '^1.0.2'
 
 [tool.poetry.group.dev.dependencies]
 autopep8 = '>=1'

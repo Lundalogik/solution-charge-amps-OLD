@@ -2684,25 +2684,6 @@ url = "https://pypi.lime.tech/simple"
 reference = "lime"
 
 [[package]]
-name = "limepkg-newsletter-pro"
-version = "1.1.0"
-description = "Lime CRM package"
-optional = false
-python-versions = ">=3.7,<4.0"
-files = [
-    {file = "limepkg_newsletter_pro-1.1.0-py3-none-any.whl", hash = "sha256:7a0840dd88b1a222324f69dc2206c23c37570db18d287e07483da69aecd14364"},
-]
-
-[package.dependencies]
-lime-crm = ">=2.76.0,<3.0.0"
-lime-newsletter = ">=3.0.0,<4.0.0"
-
-[package.source]
-type = "legacy"
-url = "https://pypi.lime.tech/simple"
-reference = "lime"
-
-[[package]]
 name = "limepkg-option-visualizer"
 version = "2.4.1"
 description = "Lime CRM package"
@@ -5282,4 +5263,4 @@ reference = "lime"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "6dd667e1871d1a826ccc3b7bab91177c17394965bd46fd5887da93ad165c5184"
+content-hash = "a509ecde220cf8a94ffc8bd05195ae1dd705580bbce907624c2b30d5db9de5e7"
