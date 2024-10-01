@@ -2099,12 +2099,12 @@ reference = "lime"
 
 [[package]]
 name = "lime-core-cloud"
-version = "1.44.8"
+version = "1.45.0"
 description = "Cloud extension for lime-core"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "lime_core_cloud-1.44.8-py3-none-any.whl", hash = "sha256:09de6e5a2f965fa94656a2fb98528a4f2de8417c8d130702b1567af2549592ed"},
+    {file = "lime_core_cloud-1.45.0-py3-none-any.whl", hash = "sha256:c0a817254f98ee02e4ebd2c32f6ddb9a5d5c7a7ca657453bd942d8037c1fc7a9"},
 ]
 
 [package.dependencies]
@@ -2553,12 +2553,12 @@ reference = "lime"
 
 [[package]]
 name = "limepkg-document-templates"
-version = "1.39.1"
+version = "1.39.2"
 description = "Lime CRM package"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "limepkg_document_templates-1.39.1-py3-none-any.whl", hash = "sha256:8d1b7db93670e25f2b674eb041846f49d41ec9ede5c2b503c49eb6ad3bdbef27"},
+    {file = "limepkg_document_templates-1.39.2-py3-none-any.whl", hash = "sha256:c688b0630f424d6154134466d73148eb283255704c56174ab7e73e18713ddcdf"},
 ]
 
 [package.dependencies]
