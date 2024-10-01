@@ -33,4 +33,3 @@ class Company(LimeObject):
 
 def register_limeobject_classes(register_class):
     register_class("company", Company)
-

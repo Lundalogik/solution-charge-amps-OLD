@@ -2,5 +2,5 @@
 
 
 def test_insanity():
-    _lime = 'Lime CRM'
-    assert _lime == 'Lime CRM'
+    _lime = "Lime CRM"
+    assert _lime == "Lime CRM"

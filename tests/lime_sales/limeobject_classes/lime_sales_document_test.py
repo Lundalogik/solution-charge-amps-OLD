@@ -24,4 +24,3 @@ def test_create_autolog_history_when_new(
         assert history.properties.coworker.value == lime_app.coworker.id
     except StopIteration:
         assert False, "history should be in the uow"
-

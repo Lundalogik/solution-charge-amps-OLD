@@ -20,4 +20,3 @@ class Todo(LimeObject):
 
 def register_limeobject_classes(register_class):
     register_class("todo", Todo)
-

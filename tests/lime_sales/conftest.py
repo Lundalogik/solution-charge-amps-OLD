@@ -39,4 +39,3 @@ def lime_app(lime_app) -> LimeApplication:
 @pytest.fixture
 def loaded_plugins(no_registered_limeobjects):
     return lime_plugins.load_plugins(config=lime_config.config)
-

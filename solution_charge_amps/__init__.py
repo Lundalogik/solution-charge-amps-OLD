@@ -18,53 +18,46 @@ def default_config():
 try:
     from .endpoints import register_blueprint  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t implement any custom '
-                'endpoints')
+    logger.info("solution_charge_amps doesn't implement any custom " "endpoints")
 
 try:
     from .event_handlers import register_event_handlers  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t implement any event '
-                'handlers')
+    logger.info("solution_charge_amps doesn't implement any event " "handlers")
 
 try:
     from .limeobject_classes import register_limeobject_classes  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t implement any '
-                'limeobject classes')
+    logger.info("solution_charge_amps doesn't implement any " "limeobject classes")
 
 try:
     from .web_components import register_web_components  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t implement any '
-                'web-components')
+    logger.info("solution_charge_amps doesn't implement any " "web-components")
 
 try:
     from .translations import register_translations  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t contain any '
-                'translations')
+    logger.info("solution_charge_amps doesn't contain any " "translations")
 
 try:
     from .config import register_config  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t contain any config')
+    logger.info("solution_charge_amps doesn't contain any config")
 
 try:
     from .tasks import get_task_modules  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t implement any '
-                'async tasks')
+    logger.info("solution_charge_amps doesn't implement any " "async tasks")
 
 try:
     from .tasks import register_scheduled_tasks  # noqa
 except ImportError:
-    logger.info('solution_charge_amps doesn\'t contain any '
-                'scheduled tasks')
+    logger.info("solution_charge_amps doesn't contain any " "scheduled tasks")
 
 
 def register_static_content():
-    '''
+    """
     Returns a list with tuples:
         (route, path_to_static_content).
 
@@ -79,12 +72,12 @@ def register_static_content():
     add the function `register_static_content` to the module. The function
     takes no arguments and shall return a list with tuples in the same form as
     this function.
-    '''
+    """
     static_filepaths = []
     try:
         from .web_components import register_static_content as wc_reg_static
+
         static_filepaths += wc_reg_static()
     except ImportError:
-        logger.info('solution_charge_amps doesn\'t contain any'
-                    'static content')
+        logger.info("solution_charge_amps doesn't contain any" "static content")
     return static_filepaths
