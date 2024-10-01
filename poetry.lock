@@ -1981,12 +1981,12 @@ reference = "lime"
 
 [[package]]
 name = "lime-bi"
-version = "3.55.0"
+version = "3.55.1"
 description = "Lime BI is a white labelled version of Metabase"
 optional = false
 python-versions = ">=3.11,<4.0"
 files = [
-    {file = "lime_bi-3.55.0-py3-none-any.whl", hash = "sha256:595bad9c9aeb1aa6f8a3fb82a7a7e91a2f2b749b37f6599f3268b8982e6a94cf"},
+    {file = "lime_bi-3.55.1-py3-none-any.whl", hash = "sha256:f59a9e8add557d299349dccc41a247caac78c4a6632192e5de97ee5d4d1e0dc6"},
 ]
 
 [package.dependencies]
